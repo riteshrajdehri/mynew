@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-// import "./App.css";
+
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextFormm";
 import About from "./components/About";
@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import Alert from "./components/Alert";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+//addded new line for testing
 function App() {
   const [mode, setMode] = useState("light");
   const [alert, setAlert] = useState(null);
@@ -38,7 +39,7 @@ function App() {
 
   return (
     // <>
-    
+
     //  <Router>
     //   <Navbar
     //     title="TextUtils"
@@ -66,9 +67,8 @@ function App() {
     // </Router>
     // </>
     <>
-
-       {/* <Router> */}
-       <Navbar
+      {/* <Router> */}
+      <Navbar
         title="TextUtils"
         aboutText="about"
         mode={mode}
@@ -77,25 +77,22 @@ function App() {
       <Alert alert={alert} />
       <div className="container">
         {/* <Routes> */}
-          {/* <Route path="/about" element={<About />} /> */}
+        {/* <Route path="/about" element={<About />} /> */}
 
-          {/* <Route
+        {/* <Route
             path="/TextUtils"
             element={ */}
-              <TextForm
-                showAlert={showAlert}
-                heading="Enter the text analyze below"
-                mode={mode}
-              />
-            {/* } */}
-          {/* /> */}
+        <TextForm
+          showAlert={showAlert}
+          heading="Enter the text analyze below"
+          mode={mode}
+        />
+        {/* } */}
+        {/* /> */}
         {/* </Routes> */}
       </div>
-    {/* </Router> */}
+      {/* </Router> */}
     </>
-    
-    
-   
   );
 }
 
